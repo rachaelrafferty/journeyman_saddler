@@ -1,0 +1,22 @@
+#footer{
+  background-color: #fff;
+  display: inherit;;
+  padding: 0px!important;
+  background-color: #6F0100;
+  color: #fff;
+}
+
+#footer .panel-1{
+  outline: 1px solid red;
+}
+
+#footer img{
+  width: 20%;
+  float: left;
+}
+
+#footer h3{
+  color: #f3ebc7;
+  font-size: 14px;
+  padding-top: 60px;
+}

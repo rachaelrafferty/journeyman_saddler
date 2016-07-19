@@ -1,0 +1,37 @@
+#portfolio{
+
+}
+
+#portfolio img{
+  display: inline-block;
+  width: 100%;
+}
+
+#portfolio h2{
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+
+#portfolio .gallery-hover{
+  color: white;
+  opacity: 0;
+  display: block;
+  background: rgba(240, 95, 64, 0.9);
+  position: absolute;
+  text-align: center;
+  /*width: 90%;*/
+  height: 310px;
+  margin-top: -330px;
+  margin-left: 5%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+#portfolio .gallery-hover a{
+  background-color: #feff99;
+  color: #6f0100;
+}
+
+#portfolio .gallery-hover:hover{
+  opacity: 1;

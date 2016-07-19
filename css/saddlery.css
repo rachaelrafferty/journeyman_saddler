@@ -1,0 +1,108 @@
+#saddlery h2{
+  text-align: center;
+  color: #6F0100;
+}
+
+#saddlery hr{
+  border-color: #c40200;
+  border-width: 3px;
+  max-width: 50px;
+  border-radius: 7px
+}
+
+.pannel-img{
+  padding-top: 20px;
+}
+
+#saddlery .pannel-img img{
+  width: 80%;
+}
+
+#saddlery p{
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.pannel-txt{
+  padding: 10px 20px;
+}
+
+
+#side-saddlery h2{
+  text-align: center;
+  color: #6F0100;
+}
+
+#side-saddlery hr{
+  border-color: #c40200;
+  border-width: 3px;
+  max-width: 50px;
+  border-radius: 7px
+  margin-bottom: 30px;
+}
+
+#side-saddlery p{
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#side-saddlery img{
+  width: 90%;
+  float: right;
+  padding-left: 10%;
+}
+
+#bridlery h2{
+  text-align: center;
+  color: #6F0100;
+}
+
+#bridlery hr{
+  border-color: #c40200;
+  border-width: 3px;
+  max-width: 50px;
+  border-radius: 7px
+  margin-bottom: 30px;
+}
+
+#bridlery p{
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+#bridlery img{
+  width: 80%;
+  float: left;
+}
+
+#leathercraft ul{
+  padding-bottom: 10px;
+}
+
+#leathercraft li{
+  color: #b30200;
+  padding-bottom: 5px;
+}
+
+#leathercraft h2{
+  text-align: center;
+  color: #6F0100;
+}
+
+#leathercraft hr{
+  border-color: #c40200;
+  border-width: 3px;
+  max-width: 50px;
+  border-radius: 7px
+  margin-bottom: 30px;
+}
+
+#leathercraft img{
+  width: 80%;
+  float: right;
+  margin-bottom: 30px;
+  display: block;
+}
