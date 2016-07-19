@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="description here" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+
+    <!-- STYLESHEETS -->
+		<link rel="stylesheet" href="filterable/css/reset.css" />
+		<link rel="stylesheet" href="filterable/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="filterable/css/prettyPhoto.css" />
+
+<!-- DEMO JS -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+<script type="text/javascript" src="filterable/js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="filterable/js/jquery.prettyPhoto.js"></script>
+<!-- END DEMO JS -->
+
+<!-- SADDLER HEADER INFO -->
+<!-- Bootstrap Core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<!-- Plugin CSS -->
+<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link href="css/creative.css" rel="stylesheet">
+
+<!-- CUSTOM STYLESHEETS -->
+<link href="css/intro.css" rel="stylesheet">
+<link href="css/services.css" rel="stylesheet">
+<link href="css/map.css" rel="stylesheet">
+<link href="css/footer.css" rel="stylesheet">
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+<style>
+
+#mainNav{
+  background-color: rgba(111, 1, 0, 0.9);
+}
+nav.primary {
+	width:auto;
+	margin:30px auto;
+	display:table;
+}
+
+nav.primary ul li  {
+	float:left;
+	list-style:none;
+}
+
+nav.primary ul li a {
+	height:39px;
+	display:block;
+	font-size:15px;
+	color:#000;
+	padding:0 10px;
+	text-decoration:none;
+	line-height:39px;
+}
+
+nav.primary li a.selected {
+    border-bottom: 3px solid #6f0100;
+}
+
+.main {
+	padding:0;
+	margin:0 auto;
+  max-width: 1000px;
+	display:block;
+}
+
+.entry {
+	position:relative;
+	float:left;
+	margin:10px;
+	cursor:pointer;
+	width:225px;
+	height:225px;
+	padding:0;
+}
+
+article{
+  height: 180px!important;
+}
+
+.portfolio { margin:0 auto; }
+
+.magnifier {
+	background:rgba(111, 1, 0, 0.7)url(images/magnifier.png) no-repeat center;
+	position:absolute;
+  height: 153px;
+	top:10px;
+	left:10px;
+	bottom:10px;
+	right:10px;
+	opacity:0;
+	-webkit-transition:all .3s ease-in-out;
+	-moz-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	transition:all .3s ease-in-out;
+}
+
+
+.entry:hover .video-hover,
+.entry:hover .magnifier { opacity:1; }
+
+img {
+	max-width:100%;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+-webkit-transition-duration: 0.8s;
+   -moz-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+}
+
+.isotope {
+-webkit-transition-property: height, width;
+   -moz-transition-property: height, width;
+        transition-property: height, width;
+}
+
+.isotope .isotope-item {
+-webkit-transition-property: -webkit-transform, opacity;
+   -moz-transition-property:    -moz-transform, opacity;
+        transition-property:         transform, opacity;
+}
+
+
+
+
+</style>
+
+	</head>
+  <body id="page-top">
+
+    <!-- NAVIGATION -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">
+                  <img src="img/JS-small-logo.gif" class="test" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" style="color: #feff99;" href="index.html">Saddlery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" style="color: #feff99;" href="#services">Side Saddlery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" style="color: #feff99;" href="#portfolio">Bridlery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" style="color: #feff99;" href="#k">Leathercraft</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" style="color: #eb3812;" href="#k">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" style="color: #feff99;" href="courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll"  style="color: #feff99;" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+    <!-- INTRO TO JOURNEYMAN SADDLER -->
+    <section class="intro" style="padding: 100px 0 0px 0;">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2 class="section-heading">Journeyman Saddler Gallery</h2>
+                    <hr>
+                </div>
+            </div>
+    </section>
+
+
+	<div id="wrapper">
+
+            <div class="container" >
+            <!-- DEMO -->
+                 <nav class="primary clearfix">
+                    <ul>
+                        <li><a href="#" class="selected" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".web">Saddlery</a></li>
+                        <li><a href="#" data-filter=".ill">Side Saddlery</a></li>
+                        <li><a href="#" data-filter=".logo">Bridlery</a></li>
+                        <li><a href="#" data-filter=".video">Leathercraft</a></li>
+                        <li><a href="#" data-filter=".print">Courses</a></li>
+                    </ul>
+                </nav>
+
+
+		<section class="main">
+
+			<div class="portfolio">
+
+				<article class="entry video">
+					<a data-rel="prettyPhoto" href="images/portfolio/1.jpg">
+                    <img src="images/small/1.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry web">
+                    <a data-rel="prettyPhoto" href="images/portfolio/2.jpg">
+					<img src="images/small/2.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry print">
+                    <a data-rel="prettyPhoto" href="images/portfolio/3.jpg">
+					<img src="images/small/3.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry ill">
+                    <a data-rel="prettyPhoto" href="images/portfolio/4.jpg">
+					<img src="images/small/4.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry video logo">
+					<a data-rel="prettyPhoto" href="images/portfolio/5.jpg">
+                    <img src="images/small/5.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry web print">
+                    <a data-rel="prettyPhoto" href="images/portfolio/6.jpg">
+					<img src="images/small/6.gif"alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry video logo print">
+					<a data-rel="prettyPhoto" href="images/portfolio/7.jpg">
+                    <img src="images/small/7.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/8.jpg">
+					<img src="images/small/8.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry video logo">
+                    <a data-rel="prettyPhoto" href="images/portfolio/9.jpg">
+					<img src="images/small/9.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry web print">
+                    <a data-rel="prettyPhoto" href="images/portfolio/10.jpg">
+					<img src="images/small/10.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry video logo print">
+					<a data-rel="prettyPhoto" href="images/portfolio/11.jpg">
+                    <img src="images/small/11.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+				<article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/12.jpg">
+					<img src="images/small/12.gif" alt="">
+					<span class="magnifier"></span>
+                    </a>
+				</article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/13.jpg">
+          <img src="images/small/13.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/14.jpg">
+          <img src="images/small/14.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/15.jpg">
+          <img src="images/small/15.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/16.jpg">
+          <img src="images/small/16.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/17.jpg">
+          <img src="images/small/17.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/18.jpg">
+          <img src="images/small/18.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/19.jpg">
+          <img src="images/small/19.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/20.jpg">
+          <img src="images/small/20.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/21.jpg">
+          <img src="images/small/21.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/22.jpg">
+          <img src="images/small/22.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/23.jpg">
+          <img src="images/small/23.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/24.jpg">
+          <img src="images/small/24.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/25.jpg">
+          <img src="images/small/25.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/26.jpg">
+          <img src="images/small/26.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/27.jpg">
+          <img src="images/small/27.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/28.jpg">
+          <img src="images/small/28.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/29.jpg">
+          <img src="images/small/29.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/30.jpg">
+          <img src="images/small/30.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/31.jpg">
+          <img src="images/small/31.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/32.jpg">
+          <img src="images/small/32.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/33.jpg">
+          <img src="images/small/33.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/34.jpg">
+          <img src="images/small/34.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/35.jpg">
+          <img src="images/small/35.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/36.jpg">
+          <img src="images/small/36.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/37.jpg">
+          <img src="images/small/37.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/38.jpg">
+          <img src="images/small/38.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/39.jpg">
+          <img src="images/small/39.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+        <article class="entry ill logo video">
+                    <a data-rel="prettyPhoto" href="images/portfolio/40.gif">
+          <img src="images/small/40.gif" alt="">
+          <span class="magnifier"></span>
+                    </a>
+        </article>
+
+			</div>
+
+		</section>
+            <!-- END DEMO -->
+                <div class="clearfix"></div>
+            </div>
+
+	</div>
+
+
+
+<!-- DEMO JS -->
+<script>
+//Portfolio
+	var $container = $('.portfolio');
+	$container.isotope({
+		filter: '*',
+		animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false,
+		}
+	});
+
+	$('nav.primary ul a').click(function(){
+		var selector = $(this).attr('data-filter');
+		$container.isotope({
+			filter: selector,
+			animationOptions: {
+				duration: 750,
+				easing: 'linear',
+				queue: false,
+			}
+		});
+	  return false;
+	});
+
+	var $optionSets = $('nav.primary ul'),
+	       $optionLinks = $optionSets.find('a');
+
+	       $optionLinks.click(function(){
+	          var $this = $(this);
+		  // don't proceed if already selected
+		  if ( $this.hasClass('selected') ) {
+		      return false;
+		  }
+	   var $optionSet = $this.parents('nav.primary ul');
+	   $optionSet.find('.selected').removeClass('selected');
+	   $this.addClass('selected');
+	});
+</script>
+
+<script>
+//prettyPhoto
+jQuery(document).ready(function(){
+	jQuery('a[data-gal]').each(function() {
+	    jQuery(this).attr('rel', jQuery(this).data('gal'));
+	});
+	jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
+});
+</script>
+
+<!-- END DEMO JS -->
+
+
+<!-- DONT COPY THESE LINES (These codes our demo codes. Please don't copy) -->
+<!-- WDT Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40730469-1', 'webdesigntunes.com');
+  ga('send', 'pageview');
+
+</script>
+
+<div style="display:none;">
+<script id="_wau49x">var _wau = _wau || []; _wau.push(["small", "l2ejtaf1o4ra", "49x"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/small.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>
+</div>
+
+</body>
+</html>
